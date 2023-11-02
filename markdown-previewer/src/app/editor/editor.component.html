@@ -1,9 +1,5 @@
 <section>
   <h1>Editor</h1>
-  <textarea rows="10" cols="50" [(ngModel)]="textData" (ngModelChange)="onMessageChange($event)"></textarea>
-  <form (ngSubmit)="submitForm()">
-    <textarea [(ngModel)]="textData" [ngModelOptions]="{standalone: true}" (keyup.enter)="submitForm()"></textarea>
-  </form>
+  <textarea rows="10" cols="50" [(ngModel)]="markdownText" (input)="updatePreview()"></textarea>
 </section>
-<textarea [(ngModel)]="markdownText" (input)="updatePreview()"></textarea>
 <app-previewer [previewHTML]="previewHTML"></app-previewer>

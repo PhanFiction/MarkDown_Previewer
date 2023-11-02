@@ -6,14 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PreviewerComponent } from './previewer/previewer.component';
 import { EditorComponent } from './editor/editor.component';
-import { HashtagToHeadingDirective } from './components/hashtag-to-heading.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     PreviewerComponent,
     EditorComponent,
-    HashtagToHeadingDirective
   ],
   imports: [
     BrowserModule,
