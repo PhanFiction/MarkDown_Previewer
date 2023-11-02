@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-previewer',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./previewer.component.css']
 })
 export class PreviewerComponent {
-
+  @Input() previewHTML: string = '';
 }
