@@ -1,5 +1,11 @@
-<section>
-  <h1>Editor</h1>
-  <textarea rows="15" cols="40" [(ngModel)]="markdownText" (input)="updatePreview()"></textarea>
-</section>
-<app-previewer [previewHTML]="previewHTML"></app-previewer>
+<div class="wrapper">
+  <section class="editor">
+    <div class="toolbar">
+      <h1>Editor</h1>
+    </div>
+    <textarea [(ngModel)]="markdownText" (input)="updatePreview()"></textarea>
+  </section>
+  <section>
+    <app-previewer [previewHTML]="previewHTML"></app-previewer>
+  </section>
+</div>

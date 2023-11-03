@@ -18,6 +18,18 @@ body {
   font-family: 'Rubik', 'Quicksand', 'Noto Sans', sans-serif;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100px;
+}
+
+td, th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
 h1 {
   font-size: 3rem;
 }
