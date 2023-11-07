@@ -1,16 +1,19 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: 3rem;
 }
 
-section {
-  padding: 1rem;
-  flex: 1 auto;
+.editor-container, .preview-container {
+  width: 40vw;
+  height: 75vh;
+  border: 1px solid #224b4b;
 }
 
-.editor {
-
+.preview {
+  height: calc(100% - 8rem); 
+  overflow: scroll;
 }
 
 .toolbar {
@@ -18,15 +21,22 @@ section {
   flex-direction: column;
   align-items: center;
   background-color: #4aa3a3;
-  padding: 0.3rem;
+  padding: 0.1rem;
   border: 1px solid #1d2f2f;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
   font-family: Russo One;
-  font-size: 1rem;
   color: black;
 }
 
-textarea {
-  width: 600px;
-  height: 500px;
+.editor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor textarea {
+  width: calc(100% - 1.1rem);
+  height: calc(100% - 2rem);
+  padding: 0.5rem;
+  border: 1px solid #ccc;
 }
