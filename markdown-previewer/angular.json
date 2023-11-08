@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "markdown-prviewer": {
+    "markdown-previewer": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/markdown-prviewer",
+            "outputPath": "dist/markdown-previewer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "markdown-prviewer:build:production"
+              "browserTarget": "markdown-previewer:build:production"
             },
             "development": {
-              "browserTarget": "markdown-prviewer:build:development"
+              "browserTarget": "markdown-previewer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "markdown-prviewer:build"
+            "browserTarget": "markdown-previewer:build"
           }
         },
         "test": {

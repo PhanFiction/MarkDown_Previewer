@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .editor-container, .preview-container {
-  margin: 4rem;
-  width: 40vw;
+  margin: 4rem 1rem 4rem 1rem;
+  width: 350px;
   height: 75vh;
   border: 1px solid #224b4b;
   flex: 1 auto;
@@ -25,11 +25,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #4aa3a3;
+  background-color: #2a3636;
   padding: 0.1rem;
   border: 1px solid #1d2f2f;
-  font-family: Russo One;
-  color: black;
+  color: white;
 }
 
 .editor {
@@ -48,4 +47,44 @@
 
 .preview::-webkit-scrollbar, .editor textarea::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+  .editor textarea {
+    height: calc(100% - 12.3rem);
+    font-size: 1.5rem;
+  }
+  .preview {
+    height: calc(100% - 10rem);
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .editor-container, .preview-container {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .editor-container, .preview-container {
+    margin: 1.5rem;
+  }
+  
+  .editor {
+    height: calc(100% + 3rem);
+    font-size: 1rem;
+  }
+  .preview {
+    height: calc(100% - 4.5rem);
+    font-size: 1rem;
+    padding-left: 0rem;
+  }
 }

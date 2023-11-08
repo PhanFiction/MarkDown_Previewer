@@ -1,0 +1,23 @@
+/* Your previewer.component.css */
+:host {
+  display: block;
+  font-size: 1rem; /* Default font size */
+}
+
+@media screen and (min-width: 1920px) {
+  :host {
+    font-size: 1.5rem; /* Adjusted font size for screens wider than 1920px */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :host {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :host {
+    font-size: .7rem;
+  }
+}
